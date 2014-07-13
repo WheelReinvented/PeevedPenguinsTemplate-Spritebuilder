@@ -9,5 +9,9 @@
 #import "CCNode.h"
 
 @interface Gameplay : CCNode
+{
+    CCPhysicsNode *_physicsNode;
+    CCNode *_catapultArm;
+}
 
 @end
