@@ -10,4 +10,29 @@
 
 @implementation Gameplay
 
+// is called when CCB file has completed loading
+- (void)didLoadFromCCB {
+    // tell this scene to accept touches
+    self.userInteractionEnabled = TRUE;
+}
+
+// called on every touch in this scene
+- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
+    [self launchPenguin];
+}
+
+- (void) launchPenguin
+{
+    CCNode *penguin = [CCBReader load:@"Penguin"];
+    
+    penguin.position = ccpAdd(_catapultArm.position, ccp(16, 50));
+    
+    [_physicsNode addChild:penguin];
+    
+    CGPoint launchDirection = ccp(1, 0);
+    CGPoint force = ccpMult(launchDirection, 8000);
+    
+    [penguin.physicsBody applyForce:force];
+}
+
 @end
