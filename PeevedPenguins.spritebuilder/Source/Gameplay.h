@@ -13,6 +13,7 @@
     CCPhysicsNode *_phisicsNode;
     CCNode *_catapultArm;
     CCNode *_levelNode;
+    CCNode *_contentNode;
 }
 
 @end
