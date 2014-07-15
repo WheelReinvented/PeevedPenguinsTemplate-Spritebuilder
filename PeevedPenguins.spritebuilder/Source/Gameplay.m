@@ -19,6 +19,7 @@
     [_levelNode addChild:level];
     
     _phisicsNode.debugDraw = TRUE;
+    _phisicsNode.pullbackNode;
     _pullbackNode.physicsBody.collisionMask = @[];
 }
 
