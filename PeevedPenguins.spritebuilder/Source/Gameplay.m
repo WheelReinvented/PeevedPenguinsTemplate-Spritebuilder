@@ -19,8 +19,7 @@
     [_levelNode addChild:level];
     
     _phisicsNode.debugDraw = TRUE;
-    _phisicsNode.pullbackNode;
-//    _pullbackNode.physicsBody.collisionMask = @[];
+    _pullbackNode.physicsBody.collisionMask = @[];
 }
 
 // called on every touch in this scene
