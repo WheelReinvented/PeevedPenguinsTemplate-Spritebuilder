@@ -18,7 +18,7 @@
     CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
     [_levelNode addChild:level];
     
-    _phisicsNode.debugDraw = TRUE;
+    // _phisicsNode.debugDraw = TRUE;
     // _p;//.physicsBody.collisionMask = @[];
     
 }
