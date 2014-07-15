@@ -22,7 +22,6 @@
     _pullbackNode;
     
     // _phisicsNode.debugDraw = TRUE;
-    // _p;//.physicsBody.collisionMask = @[];
     
 }
 
