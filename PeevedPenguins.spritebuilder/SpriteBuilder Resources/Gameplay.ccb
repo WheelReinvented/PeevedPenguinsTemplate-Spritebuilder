@@ -55,7 +55,7 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>216.99998474121094</real>
+						<real>227.99998474121094</real>
 						<real>109.99998474121094</real>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -164,7 +164,7 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>222</real>
+						<real>233</real>
 						<real>299</real>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -1104,7 +1104,7 @@
 								<key>displayName</key>
 								<string>CCNode</string>
 								<key>memberVarAssignmentName</key>
-								<string>_pullbackNode</string>
+								<string>_p</string>
 								<key>memberVarAssignmentType</key>
 								<integer>1</integer>
 								<key>physicsBody</key>
@@ -1323,7 +1323,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-11</real>
+							<real>0.0</real>
 							<real>0.0</real>
 							<integer>0</integer>
 							<integer>0</integer>
