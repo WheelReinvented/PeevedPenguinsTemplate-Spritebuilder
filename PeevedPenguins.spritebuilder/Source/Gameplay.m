@@ -11,12 +11,15 @@
 @implementation Gameplay
 
 // is called when CCB file has completed loading
-- (void)didLoadFromCCB {
+- (void)didLoadFromCCB
+{
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
     // load levels
     CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
     [_levelNode addChild:level];
+    
+    _pullbackNode;
     
     // _phisicsNode.debugDraw = TRUE;
     // _p;//.physicsBody.collisionMask = @[];
