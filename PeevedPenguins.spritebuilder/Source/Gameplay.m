@@ -41,7 +41,7 @@
         _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody
                                                               bodyB:_catapultArm.physicsBody
                                                             anchorA:ccp(0, 0)
-                                                            anchorB:ccp(30, 100)
+                                                            anchorB:ccp(30, 120)
                                                          restLength:0.f
                                                           stiffness:3000.f
                                                             damping:150.f];
