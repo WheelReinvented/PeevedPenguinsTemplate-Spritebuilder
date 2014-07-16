@@ -45,6 +45,7 @@
                                                          restLength:0.f
                                                           stiffness:3000.f
                                                             damping:150.f];
+        CCLOG(@"%@",_mouseJoint);
     }
 }
 
