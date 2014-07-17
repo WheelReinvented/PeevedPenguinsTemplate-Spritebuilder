@@ -43,7 +43,7 @@
                                                             anchorA:ccp(0, 0)
                                                             anchorB:ccp(30, 140)
                                                          restLength:0.f
-                                                          stiffness:3000.f
+                                                          stiffness:5000.f
                                                             damping:150.f];
         
         _currentPenguin = [CCBReader load:@"Penguin"];
