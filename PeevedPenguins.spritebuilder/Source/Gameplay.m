@@ -45,7 +45,14 @@
                                                          restLength:0.f
                                                           stiffness:3000.f
                                                             damping:150.f];
-        CCLOG(@"%@",_mouseJoint);
+        
+        _currentPenguin = [CCBReader load:@"Penguin"];
+        CGPoint penguinPosition = [_catapultArm convertToWorldSpace:ccp(30, 140)];
+        _currentPenguin.position = [_phisicsNode convertToNodeSpace:penguinPosition];
+        
+        [_phisicsNode addChild:_currentPenguin];
+        _currentPenguin.physicsBody.allowsRotation = FALSE;
+        _penguinCatapultJoint = [CCPhysicsJoint connectedPivotJointWithBodyA:_currentPenguin.physicsBody bodyB:_catapultArm.physicsBody anchorA:_currentPenguin.anchorPointInPoints];
     }
 }
 
@@ -95,6 +102,16 @@
         // releases the joint and lets the catapult snap back
         [_mouseJoint invalidate];
         _mouseJoint = nil;
+        
+        [_penguinCatapultJoint invalidate];
+        _penguinCatapultJoint = nil;
+        
+        // after snapping rotation is fine
+        _currentPenguin.physicsBody.allowsRotation = TRUE;
+        
+        // follow the flying penguin
+        CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
+        [_contentNode runAction:follow];
     }
 }
 
