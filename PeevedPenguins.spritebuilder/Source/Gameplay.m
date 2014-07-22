@@ -128,10 +128,14 @@
     
     // if energy is large enough, remove the seal
     if (energy > 5000.f) {
-        [[_physicsNode space] addPostStepBlock:^{
+        [[_phisicsNode space] addPostStepBlock:^{
             [self sealRemoved:nodeA];
         } key:nodeA];
     }
+}
+
+- (void)sealRemoved:(CCNode *)seal {
+    [seal removeFromParent];
 }
 
 @end
