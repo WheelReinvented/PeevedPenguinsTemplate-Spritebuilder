@@ -11,6 +11,7 @@
 		904F85001972F52300C6DBB3 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 904F84FF1972F52300C6DBB3 /* Gameplay.m */; };
 		90D11EAF196F284A003F0E10 /* Penguin.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D11EAE196F284A003F0E10 /* Penguin.m */; };
 		90D11EB3196F2858003F0E10 /* Seal.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D11EB2196F2858003F0E10 /* Seal.m */; };
+		90F86FFF19805F4800BDA4A0 /* WaitingPenguin.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F86FFE19805F4800BDA4A0 /* WaitingPenguin.m */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
 		B71F5913188484E7003F4D28 /* iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5909188484E7003F4D28 /* iPad.png */; };
@@ -66,6 +67,8 @@
 		90D11EAE196F284A003F0E10 /* Penguin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Penguin.m; path = Source/Penguin.m; sourceTree = "<group>"; };
 		90D11EB1196F2858003F0E10 /* Seal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Seal.h; path = Source/Seal.h; sourceTree = "<group>"; };
 		90D11EB2196F2858003F0E10 /* Seal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Seal.m; path = Source/Seal.m; sourceTree = "<group>"; };
+		90F86FFD19805F4800BDA4A0 /* WaitingPenguin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaitingPenguin.h; path = Source/WaitingPenguin.h; sourceTree = "<group>"; };
+		90F86FFE19805F4800BDA4A0 /* WaitingPenguin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WaitingPenguin.m; path = Source/WaitingPenguin.m; sourceTree = "<group>"; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
 		B71F5909188484E7003F4D28 /* iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPad.png; path = Icons/iPad.png; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 				B7378993180767190076A88C /* MainScene.m */,
 				904F84FE1972F52300C6DBB3 /* Gameplay.h */,
 				904F84FF1972F52300C6DBB3 /* Gameplay.m */,
+				90F86FFD19805F4800BDA4A0 /* WaitingPenguin.h */,
+				90F86FFE19805F4800BDA4A0 /* WaitingPenguin.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -357,6 +362,7 @@
 			files = (
 				90D11EB3196F2858003F0E10 /* Seal.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
+				90F86FFF19805F4800BDA4A0 /* WaitingPenguin.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				90D11EAF196F284A003F0E10 /* Penguin.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
