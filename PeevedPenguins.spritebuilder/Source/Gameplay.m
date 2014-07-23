@@ -56,7 +56,7 @@ static const float MIN_SPEED = 5.f;
 //            return;
 //        }
 //    }
-}
+//}
 
 
 // called on every touch in this scene
