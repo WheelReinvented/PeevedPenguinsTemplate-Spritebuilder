@@ -23,7 +23,7 @@
     _pullbackNode.physicsBody.collisionMask = @[];
     _mouseJointNode.physicsBody.collisionMask = @[];
     
- _phisicsNode.debugDraw = TRUE;
+ // _phisicsNode.debugDraw = TRUE;
     _phisicsNode.collisionDelegate = self;
     
 }
